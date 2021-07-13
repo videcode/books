@@ -50,5 +50,3 @@
 [$(wildcard шаблон)](./wildcard.md)  
 
 
-
-
