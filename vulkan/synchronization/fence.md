@@ -4,7 +4,7 @@
 
     VkResult vkCreateFence(
 	      VkDevice device,  
-		  const VkFenceCreateInfo* pCreateInfo, 
-		  const VkAllocationCallbacks* pAllocator, 
-		  VkFence* pFence
+		const VkFenceCreateInfo* pCreateInfo, 
+		const VkAllocationCallbacks* pAllocator, 
+		VkFence* pFence
 	);
