@@ -1,0 +1,1 @@
+[синхронізація](./synchronization/index.md)  
