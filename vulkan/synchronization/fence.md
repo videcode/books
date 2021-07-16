@@ -25,13 +25,13 @@
 Якщо була якась помилка з отриманням статусу бар'єру, то функція верне код помилки.  
 Для того щоб очікувати завершення бар'єру, необхідно викликати функцію:   
 
-    vkWaitForFences(
-	    VkDevice device,
-		uint32_t fenceCount,
-		const VkFence* pFences,
-		VkBool32 waitAll,
-		uint64_t timeout
-	);    
+    vkWaitForFences(  
+	    VkDevice device,  
+		uint32_t fenceCount,  
+		const VkFence* pFences,  
+		VkBool32 waitAll,  
+		uint64_t timeout  
+	);      
 
 
 
