@@ -3,8 +3,8 @@
 Оскільки бар'єр часто відповідає "рідному" примітиву синхронізації, то потоки можуть засипати до моменту сигналу бар'єру. Враховуючи останнє, цей примітив повинен використовуватись в операціях, які можуть мати певний час для завершення. Наприклад, завершення виконання командних буферів чи показу завершеного кадру користувачу.
 
     VkResult vkCreateFence(
-	        VkDevice device,  
-			const VkFenceCreateInfo* pCreateInfo, 
-			const VkAllocationCallbacks* pAllocator, 
-			VkFence* pFence
+	      VkDevice device,  
+		  const VkFenceCreateInfo* pCreateInfo, 
+		  const VkAllocationCallbacks* pAllocator, 
+		  VkFence* pFence
 	);
