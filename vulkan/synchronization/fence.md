@@ -4,9 +4,9 @@
 
     VkResult vkCreateFence(
 	      VkDevice device,  
-	  const VkFenceCreateInfo* pCreateInfo, 
-	  const VkAllocationCallbacks* pAllocator, 
-	  VkFence* pFence
+		  const VkFenceCreateInfo* pCreateInfo, 
+		  const VkAllocationCallbacks* pAllocator, 
+		  VkFence* pFence
 	); 
 	
     void vkDestroyFence(
@@ -31,7 +31,7 @@
 		const VkFence* pFences,
 		VkBool32 waitAll,
 		uint64_t timeout
-	);  
+	);    
 
 
 
