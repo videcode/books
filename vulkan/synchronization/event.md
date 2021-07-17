@@ -29,14 +29,27 @@ void vkDestroyEvent(
 	const VkAllocationCallbacks* pAlocator
 );  
 ```  
-Змінити стан зі сторони CPU:  
+Змінити стан зі сторони CPU (взвести):  
 ```c  
+// взведенний  
 VkResult vkSetEvent(
     VkDevice device,
 	VkEvent event
 );
+// незведенний стан  
+VkResult vkResetEvent(  
+    VkDevice device,  
+	VkEvent event  
+);  
+// перевірити стан  
+VkResult vkGetEventStatus(  
+    VkDevice device,  
+	VkEvent event  
+);  
+// VK_EVENT_SET: взведенний стан  
+// VK_EVENT_RESET: невзведенний стан  
 ```  
-
+Доступ до події повинен бути зовні синхронізованний. Коли один потік міняє стан події на взведенний, то якщо інший потік очікує цю подію з допомогою виклику vkCmdWaitEvents(), він негайно буде розблокованний.
 
 
 
