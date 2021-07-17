@@ -29,7 +29,7 @@ void vkDestroyEvent(
 	const VkAllocationCallbacks* pAlocator
 );  
 ```  
-Змінити стан зі сторони CPU (взвести):  
+Змінити стан зі сторони CPU:  
 ```c  
 // взведенний  
 VkResult vkSetEvent(
