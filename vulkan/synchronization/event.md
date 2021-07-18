@@ -49,7 +49,37 @@ VkResult vkGetEventStatus(
 // VK_EVENT_SET: взведенний стан  
 // VK_EVENT_RESET: невзведенний стан  
 ```  
-Доступ до події повинен бути зовні синхронізованний. Коли один потік міняє стан події на взведенний, то якщо інший потік очікує цю подію з допомогою виклику vkCmdWaitEvents(), він негайно буде розблокованний.
+Доступ до події повинен бути зовні синхронізованний. Щоб CPU отримав сповіщення про зміну статусу потрібно в циклі чи іншим методом перевіряти vkGetEventStatus, бо інакшого варіанту немає.  
+
+Події можуть керуватись пристроєм через командний буфер:  
+```c  
+void vkCmdSetEvent(  
+    VkCommandBuffer commandBuffer,  
+	VkEvent event,  
+	VkPipelineStageFlags stageMask
+);  
+
+void vkCmdResetEvent(  
+    VkCommandBuffer commandBuffer,  
+	VkEvent event,  
+	VkPipelineStageFlags stageMask
+);  
+
+void vkCmdWaitEvents (  
+    VkCommandBuffer commandBuffer,  
+	uint32_t eventCount,  
+	const VkEvent* pEvents,  
+	VkPipelineStageFlags srcStageMask,  
+	VkPipelineStageFlags dstStageMask,  
+	uint32_t memoryBarriers,  
+	const VkMemoryBarrier* pMemoryBarriers,  
+	uint32_t bufferMemoryBarrierCount,  
+	const VkBufferMemoryBarrier* pBufferMemoryBarriers,  
+	uint32_t imageMemoryBarrierCount,  
+	const VkImageMemoryBarrier* pImageMemoryBarriers  
+);  
+```   
+Коли один потік міняє стан події на взведенний, то якщо інший потік очікує цю подію з допомогою виклику vkCmdWaitEvents(), він негайно буде розблокованний.  
 
 
 
