@@ -4,7 +4,7 @@
 
 c++98 | c++11 | c++17 | c++20 | TM TC | reflection TC
 --|--|--|---|---|---
-and|alignas|register*|char8_t|atomic_cancel|reflexpr
+and, and_eq, asm, auto|alignas|register*|char8_t|atomic_cancel|reflexpr
 and_eq|alignof||concept|atomic_commit
 asm|auto*||consteval|atomic_noexcept
 auto|char16_t||constinit|synchronized
