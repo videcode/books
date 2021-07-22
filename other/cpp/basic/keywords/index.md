@@ -5,21 +5,21 @@
 c++98 | c++11 | c++17 | c++20 | TM TC | reflection TC
 --|--|--|---|---|---
 and, and_eq, asm, auto|alignas|register*|char8_t|atomic_cancel|reflexpr
-and_eq|alignof||concept|atomic_commit
-asm|auto*||consteval|atomic_noexcept
-auto|char16_t||constinit|synchronized
-bitand|char32_t||co_await
-bitor|class*||co_return
-bool|constexpr||co_yield
-break|decltype||export*
-case|default*||
-catch|delete*||
-char|export*||
-class|extern*||
-compl|inline*||
-const|mutable*||
-const_cast|noexcept||
-continue|nullptr||
+bitand, bitor, bool, break | alignof || concept | atomic_commit
+case, catch, char, class, compl, const, const_cast, continue|auto*||consteval|atomic_noexcept
+|char16_t||constinit|synchronized
+|char32_t||co_await
+|class*||co_return
+|constexpr||co_yield
+|decltype||export*
+|default*||
+|delete*||
+|export*||
+|extern*||
+|inline*||
+|mutable*||
+|noexcept||
+|nullptr||
 default|sizeof*||
 delete|static_assert||
 |do|struct*
