@@ -1,4 +1,8 @@
 # Ключові слова
+c++98 | c++11 | c++17 | c++20
+and | alignas | |
+
+
 - and
 - and_eq
 - asm
