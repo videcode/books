@@ -1,11 +1,13 @@
 # Ключові слова
 
-c++98 | c++11 | c++17 | c++20
---|--|--|---
-and|alignas|register*|char8_t
-and_eq|alignof||concept
-asm|auto*||consteval
-auto|char16_t||constinit
+* |означає перевизначення
+
+c++98 | c++11 | c++17 | c++20 | TM TC | reflection TC
+--|--|--|---|---|---
+and|alignas|register*|char8_t|atomic_cancel|reflexpr
+and_eq|alignof||concept|atomic_commit
+asm|auto*||consteval|atomic_noexcept
+auto|char16_t||constinit|synchronized
 bitand|char32_t||co_await
 bitor|class*||co_return
 bool|constexpr||co_yield
@@ -77,29 +79,3 @@ delete|static_assert||
 |xor
 |xor_eq
 
-##### C++11
-
-
-##### C++17
-
-
-##### C++20
-
-
-
-|
-|
-|
-|
-|
-
-##### (TM TC)
-|atomic_cancel
-|atomic_commit
-|atomic_noexcept
-|synchronized
-
-##### (reflection TC)
-|reflexpr
-
-* |означає перевизначення
