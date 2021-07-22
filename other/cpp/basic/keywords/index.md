@@ -1,6 +1,7 @@
 # Ключові слова
 
 c++98 | c++11 | c++17 | c++20
+--- | --- | --- | ---
 and | alignas | |
 
 Colons can be used to align columns.
